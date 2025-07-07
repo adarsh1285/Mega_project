@@ -4,16 +4,16 @@ const projectNoteSchema = new Schema({
     project: {
         type: Schema.Types.ObjectId,
         ref: "Project",
-        require: true,
+        required: true,
     },
     createdBy: {
         type: Schema.Types.ObjectId,
         ref: "User",
-        require: true,
+        required: true,
     },
     content: {
         type: String,
-        require: true,
+        required: true,
     }
 }, {timestamps: true});
 
