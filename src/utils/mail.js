@@ -2,7 +2,7 @@ import nodemailer from "nodemailer"
 import mailgen from "mailgen"
 
 const sendMail = async (options) => {
-    var mailGenerator = new Mailgen({
+    var mailGenerator = new mailgen({
         theme: 'default',
         product: {
             // Appears in header & footer of e-mails
